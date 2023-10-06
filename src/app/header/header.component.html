@@ -16,14 +16,26 @@
     </div>
     <div class="menu-column" [class.active]="menuOpen">
       <ul>
-        <li>Home</li>
-        <li>Mobiles</li>
-        <li>Accessories</li>
-        <li>AboutUs</li>
+        <li><i class="fa fa-home menu-icon home-icon"></i>Home</li>
+        <li><i class="fa fa-mobile menu-icon mobile-icon"></i>Mobiles</li>
+        <li><i class="fa fa-plug menu-icon"></i>Accessories</li>
+        <li><i class="fa fa-info-circle menu-icon"></i>AboutUs</li>
       </ul>
+      <div class="footer">
+        <button (click)="toggleMenu()">Close</button>
+      </div>
     </div>
     <div class="auth">
-      <a class="zoom-link login" href="" routerLinkActive="active">Login</a>
+      <div>
+        <i class="fa fa-search"></i>
+      </div>
+      <div>
+        <i class="fa fa-user"></i>
+      </div>
+      <div>
+        <i class="fa fa-bell"></i>
+      </div>
+      <!-- <a class="zoom-link login" href="" routerLinkActive="active">Login</a> -->
     </div>
   </div>
 </ng-container>

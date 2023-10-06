@@ -58,6 +58,11 @@
     width: 90%;
     display: flex;
     align-items: center;
+    /* border: 1px solid red; */
+  }
+  .auth > div {
+    margin-left: 1.5rem;
+    color: white;
   }
   .login {
     border: 1px solid whitesmoke;
@@ -73,7 +78,7 @@
     width: 0;
     height: 100%;
     position: fixed;
-    top: 10px;
+    top: 0.5px;
     left: 0;
     background-color: #004c8e; /* Background color of the menu */
     overflow-x: hidden;
@@ -99,5 +104,32 @@
     color: black;
     border-bottom: 1px solid lightslategray;
     font-weight: 100;
+  }
+  .footer button {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: #004c8e;
+    float: right;
+    margin-right: 10px;
+  }
+  .menu-icon {
+    /* border: 1px solid red; */
+    width: 25px;
+    max-width: 25px;
+  }
+  .home-icon {
+    /* font-size: 16px; */
+  }
+  .mobile-icon {
+    font-size: 21px;
+  }
+  .accessories-icon {
+    font-size: 15px;
+  }
+  .menu-column>ul>li {
+    display: flex;
+    /* border: 1px solid red; */
   }
 }
