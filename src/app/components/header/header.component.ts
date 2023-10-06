@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ScreenService } from '../services/screen.service';
+import { ScreenService } from '../../services/screen.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,12 +10,17 @@ import { ScreenService } from '../services/screen.service';
 export class HeaderComponent implements OnInit {
   screenWidth: number;
   menuOpen = false;
-  constructor(private screenService: ScreenService) {}
+  constructor(private screenService: ScreenService, private router: Router) {}
   ngOnInit() {
     this.screenWidth = this.screenService.getScreenWidth();
   }
 
   toggleMenu(): void {
     this.menuOpen = !this.menuOpen;
+  }
+
+  goToMobiles() {
+    this.toggleMenu();
+    this.router.navigate(['/mobiles']);
   }
 }

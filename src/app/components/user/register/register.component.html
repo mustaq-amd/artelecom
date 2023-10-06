@@ -1,0 +1,84 @@
+<div class="p-fluid register-form">
+  <div>
+    <legend>Registration</legend>
+  </div>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="p-field">
+      <label for="name">Name</label>
+      <small *ngIf="userForm.get('name').hasError('required')" class="p-error">
+        *
+      </small>
+      <input id="name" type="text" pInputText formControlName="name" />
+    </div>
+
+    <div class="p-field">
+      <label for="email">Email</label>
+      <small *ngIf="userForm.get('email').hasError('required')" class="p-error">
+        *
+      </small>
+      <input id="email" type="text" pInputText formControlName="email" />
+      <small *ngIf="userForm.get('email').hasError('email')" class="p-error">
+        Please enter a valid email address.
+      </small>
+    </div>
+
+    <div class="p-field">
+      <label for="password">Password</label>
+      <small
+        *ngIf="userForm.get('password').hasError('required')"
+        class="p-error"
+      >
+        *
+      </small>
+      <input
+        id="password"
+        type="password"
+        pPassword
+        formControlName="password"
+      />
+
+      <small
+        *ngIf="userForm.get('password').hasError('minlength')"
+        class="p-error"
+      >
+        Password must be at least 6 characters long.
+      </small>
+    </div>
+
+    <div class="p-field">
+      <label for="dateOfBirth">Date of Birth</label>
+      <small
+        *ngIf="userForm.get('dateOfBirth').hasError('required')"
+        class="p-error"
+      >
+        *
+      </small>
+      <p-calendar
+        class="dob"
+        id="dateOfBirth"
+        [showIcon]="true"
+        formControlName="dateOfBirth"
+      ></p-calendar>
+    </div>
+
+    <div class="p-field">
+      <label for="mobile">Mobile</label>
+      <small
+        *ngIf="userForm.get('mobile').hasError('required')"
+        class="p-error"
+      >
+        *
+      </small>
+      <input id="mobile" type="text" pInputText formControlName="mobile" />
+    </div>
+
+    <div class="p-field">
+      <button
+        pButton
+        type="submit"
+        label="Submit"
+        [disabled]="!userForm.valid"
+      ></button>
+    </div>
+  </form>
+</div>

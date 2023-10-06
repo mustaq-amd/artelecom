@@ -24,20 +24,33 @@
       <div class="side-nav-mobile-header">
         <div class="close-button">
           <button (click)="toggleMenu()">
-            <i class="fa fa-times fa-lg"></i>
+            <i class="fa fa-times fa-lg cross-icon"></i>
           </button>
         </div>
         <div class="logo">
-          <img src="../../assets/AR-Logo-white.jpg" alt="AR Telecom" />
+          <img src="../../assets/AR-Logo.jpg" alt="AR Telecom" />
         </div>
         <div class="home-icon">
           <i class="fa fa-home fa-lg"></i>
         </div>
       </div>
       <ul>
-        <li>
+        <li (click)="goToMobiles()">
           <div class="icon-text">
             <i class="fa fa-mobile menu-icon mobile-icon"></i>Mobiles
+            <a routerLink="mobiles"></a>
+          </div>
+          <i class="fa fa-chevron-right arrow-icon"></i>
+        </li>
+        <li>
+          <div class="icon-text">
+            <i class="fa fa-clock-o menu-icon watch-icon"></i>Watches
+          </div>
+          <i class="fa fa-chevron-right arrow-icon"></i>
+        </li>
+        <li>
+          <div class="icon-text">
+            <i class="fa fa-headphones menu-icon watch-icon"></i>Headphones
           </div>
           <i class="fa fa-chevron-right arrow-icon"></i>
         </li>
@@ -59,30 +72,6 @@
           </div>
           <i class="fa fa-chevron-right arrow-icon"></i>
         </li>
-        <li>
-          <div class="icon-text">
-            <i class="fa fa-info-circle menu-icon"></i>Kya rakna bol
-          </div>
-          <i class="fa fa-chevron-right arrow-icon"></i>
-        </li>
-        <li>
-          <div class="icon-text">
-            <i class="fa fa-info-circle menu-icon"></i>Kya rakna bol
-          </div>
-          <i class="fa fa-chevron-right arrow-icon"></i>
-        </li>
-        <li>
-          <div class="icon-text">
-            <i class="fa fa-info-circle menu-icon"></i>Kya rakna bol
-          </div>
-          <i class="fa fa-chevron-right arrow-icon"></i>
-        </li>
-        <li>
-          <div class="icon-text">
-            <i class="fa fa-info-circle menu-icon"></i>Kya rakna bol
-          </div>
-          <i class="fa fa-chevron-right arrow-icon"></i>
-        </li>
       </ul>
     </div>
     <div class="auth">
@@ -93,7 +82,7 @@
         <i class="fa fa-heart"></i>
       </div>
       <div>
-        <i class="fa fa-shopping-cart"></i>
+        <i class="fa fa-shopping-cart" routerLink="cart"></i>
       </div>
       <div>
         <i class="fa fa-user"></i>
@@ -101,3 +90,4 @@
     </div>
   </div>
 </ng-container>
+<router-outlet></router-outlet>

@@ -49,7 +49,7 @@
 @media (max-width: 767px) {
   /* Styles specific to mobile phones go here */
   .header-nav {
-    padding: 15px;
+    padding: 20px;
     display: flex;
     align-items: center;
   }
@@ -120,6 +120,9 @@
     border: none;
     background-color: transparent;
   }
+  .cross-icon {
+    color: white;
+  }
   .menu-icon {
     /* border: 1px solid red; */
     width: 25px;
@@ -135,6 +138,7 @@
     display: flex;
     /* border: 1px solid red; */
     background-color: whitesmoke;
+    padding: 15px;
   }
   .menu-column > ul > li:hover {
     background-color: lightgray;
@@ -154,7 +158,7 @@
   .side-nav-mobile-header {
     display: flex;
     flex-direction: row;
-    /* border: 1px solid red; */
+    background-color: #004c8e;
     padding: 20px;
     justify-items: center;
     justify-content: space-between;
@@ -164,6 +168,6 @@
     width: 40%;
   }
   .menu-column .home-icon {
-    color: black;
+    color: white;
   }
 }
