@@ -9,9 +9,10 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { MenuModule } from 'primeng/menu';
+import { UserInfoComponent } from './user-info/user-info.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent],
+  declarations: [AppComponent, HeaderComponent, UserInfoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

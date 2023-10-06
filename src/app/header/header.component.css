@@ -42,7 +42,7 @@
 @media (max-width: 767px) {
   /* Styles specific to mobile phones go here */
   .header-nav {
-    padding: 10px;
+    padding: 15px;
     display: flex;
     align-items: center;
   }
@@ -74,11 +74,11 @@
   }
 
   .menu-column {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     width: 0;
     height: 100%;
     position: fixed;
-    top: 0.5px;
+    top: 0;
     left: 0;
     background-color: #004c8e; /* Background color of the menu */
     overflow-x: hidden;
