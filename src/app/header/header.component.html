@@ -1,0 +1,29 @@
+<ng-container *ngIf="screenWidth >= 768">
+  <div class="header-nav">
+    <a class="zoom-link" href="" routerLinkActive="active">Home</a>
+    <a class="zoom-link" href="" routerLinkActive="active">Mobiles</a>
+    <a class="zoom-link" href="" routerLinkActive="active">Accessories</a>
+    <a class="zoom-link" href="" routerLinkActive="active">AboutUs</a>
+    <div class="auth">
+      <a class="zoom-link login" href="" routerLinkActive="active">Login</a>
+    </div>
+  </div>
+</ng-container>
+<ng-container *ngIf="screenWidth < 768">
+  <div class="header-nav">
+    <div class="hamburger-menu" (click)="toggleMenu()">
+      <i class="fa fa-bars bars-icon"></i>
+    </div>
+    <div class="menu-column" [class.active]="menuOpen">
+      <ul>
+        <li>Home</li>
+        <li>Mobiles</li>
+        <li>Accessories</li>
+        <li>AboutUs</li>
+      </ul>
+    </div>
+    <div class="auth">
+      <a class="zoom-link login" href="" routerLinkActive="active">Login</a>
+    </div>
+  </div>
+</ng-container>

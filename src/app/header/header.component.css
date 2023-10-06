@@ -1,0 +1,103 @@
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  background-color: #004c8e;
+  align-items: center;
+}
+.header-nav a {
+  text-decoration: none;
+  margin-right: 5%;
+  color: white;
+}
+/* Define the zoom effect */
+.zoom-link {
+  display: inline-block; /* Make the anchor tag a block-level element */
+  transition: transform 0.3s ease;
+}
+
+/* Apply the zoom effect on hover */
+.zoom-link:hover {
+  transform: scale(1.1); /* Increase the scale factor to zoom in more */
+}
+
+.active {
+  font-weight: bold;
+  color: blue;
+}
+
+.auth {
+  width: 60%;
+  display: flex;
+  justify-content: end;
+}
+
+.login {
+  border: 1px solid whitesmoke;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Media query for screens with a maximum width of 767px (typical for mobile phones) */
+@media (max-width: 767px) {
+  /* Styles specific to mobile phones go here */
+  .header-nav {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .bars-icon {
+    margin-left: 10px;
+    font-size: 20px;
+    color: white;
+  }
+  .bars-icon:hover {
+    cursor: pointer;
+  }
+  .auth {
+    width: 90%;
+    display: flex;
+    align-items: center;
+  }
+  .login {
+    border: 1px solid whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .hamburger-menu {
+    cursor: pointer;
+  }
+
+  .menu-column {
+    margin-top: 40px;
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    background-color: #004c8e; /* Background color of the menu */
+    overflow-x: hidden;
+    transition: 0.3s; /* Smooth slide animation */
+    z-index: 1;
+  }
+
+  .menu-column.active {
+    max-width: 70%;
+    width: 50%;
+    background-color: white;
+    border: 1px solid beige;
+  }
+
+  /* Style the menu items as needed */
+  .menu-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .menu-column li {
+    padding: 10px;
+    color: black;
+    border-bottom: 1px solid lightslategray;
+    font-weight: 100;
+  }
+}
