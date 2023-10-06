@@ -1,6 +1,9 @@
 <ng-container *ngIf="screenWidth >= 768">
   <div class="header-nav">
-    <a class="zoom-link" href="" routerLinkActive="active">Home</a>
+    <div class="logo">
+      <img src="../../assets/AR-Logo.jpg" alt="AR Telecom" />
+    </div>
+    <!-- <a class="zoom-link" href="" routerLinkActive="active">Home</a> -->
     <a class="zoom-link" href="" routerLinkActive="active">Mobiles</a>
     <a class="zoom-link" href="" routerLinkActive="active">Accessories</a>
     <a class="zoom-link" href="" routerLinkActive="active">AboutUs</a>
@@ -14,28 +17,87 @@
     <div class="hamburger-menu" (click)="toggleMenu()">
       <i class="fa fa-bars bars-icon"></i>
     </div>
+    <div class="logo">
+      <img src="../../assets/AR-Logo.jpg" alt="AR Telecom" />
+    </div>
     <div class="menu-column" [class.active]="menuOpen">
-      <ul>
-        <li><i class="fa fa-home menu-icon home-icon"></i>Home</li>
-        <li><i class="fa fa-mobile menu-icon mobile-icon"></i>Mobiles</li>
-        <li><i class="fa fa-plug menu-icon"></i>Accessories</li>
-        <li><i class="fa fa-info-circle menu-icon"></i>AboutUs</li>
-      </ul>
-      <div class="footer">
-        <button (click)="toggleMenu()">Close</button>
+      <div class="side-nav-mobile-header">
+        <div class="close-button">
+          <button (click)="toggleMenu()">
+            <i class="fa fa-times fa-lg"></i>
+          </button>
+        </div>
+        <div class="logo">
+          <img src="../../assets/AR-Logo-white.jpg" alt="AR Telecom" />
+        </div>
+        <div class="home-icon">
+          <i class="fa fa-home fa-lg"></i>
+        </div>
       </div>
+      <ul>
+        <li>
+          <div class="icon-text">
+            <i class="fa fa-mobile menu-icon mobile-icon"></i>Mobiles
+          </div>
+          <i class="fa fa-chevron-right arrow-icon"></i>
+        </li>
+        <li>
+          <div class="icon-text">
+            <i class="fa fa-plug menu-icon"></i>Accessories
+          </div>
+          <i class="fa fa-chevron-right arrow-icon"></i>
+        </li>
+        <li>
+          <div class="icon-text">
+            <i class="fa fa-info-circle menu-icon"></i>AboutUs
+          </div>
+          <i class="fa fa-chevron-right arrow-icon"></i>
+        </li>
+        <li>
+          <div class="icon-text">
+            <i class="fa fa-info-circle menu-icon"></i>Kya rakna bol
+          </div>
+          <i class="fa fa-chevron-right arrow-icon"></i>
+        </li>
+        <li>
+          <div class="icon-text">
+            <i class="fa fa-info-circle menu-icon"></i>Kya rakna bol
+          </div>
+          <i class="fa fa-chevron-right arrow-icon"></i>
+        </li>
+        <li>
+          <div class="icon-text">
+            <i class="fa fa-info-circle menu-icon"></i>Kya rakna bol
+          </div>
+          <i class="fa fa-chevron-right arrow-icon"></i>
+        </li>
+        <li>
+          <div class="icon-text">
+            <i class="fa fa-info-circle menu-icon"></i>Kya rakna bol
+          </div>
+          <i class="fa fa-chevron-right arrow-icon"></i>
+        </li>
+        <li>
+          <div class="icon-text">
+            <i class="fa fa-info-circle menu-icon"></i>Kya rakna bol
+          </div>
+          <i class="fa fa-chevron-right arrow-icon"></i>
+        </li>
+      </ul>
     </div>
     <div class="auth">
       <div>
         <i class="fa fa-search"></i>
       </div>
       <div>
-        <i class="fa fa-user"></i>
+        <i class="fa fa-heart"></i>
       </div>
       <div>
-        <i class="fa fa-bell"></i>
+        <i class="fa fa-shopping-cart"></i>
       </div>
-      <!-- <a class="zoom-link login" href="" routerLinkActive="active">Login</a> -->
+      <div>
+        <i class="fa fa-user"></i>
+      </div>
     </div>
   </div>
 </ng-container>

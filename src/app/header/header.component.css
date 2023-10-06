@@ -37,6 +37,13 @@
   padding: 5px;
   border-radius: 5px;
 }
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 90%;
+}
 
 /* Media query for screens with a maximum width of 767px (typical for mobile phones) */
 @media (max-width: 767px) {
@@ -87,16 +94,20 @@
   }
 
   .menu-column.active {
-    max-width: 70%;
-    width: 50%;
+    width: 100%;
+    margin: auto;
+    max-width: 100%;
     background-color: white;
-    border: 1px solid beige;
+    /* border: 1px solid beige; */
   }
 
   /* Style the menu items as needed */
   .menu-column ul {
+    width: 90%;
+    margin: 2rem auto;
     list-style-type: none;
     padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .menu-column li {
@@ -105,22 +116,14 @@
     border-bottom: 1px solid lightslategray;
     font-weight: 100;
   }
-  .footer button {
+  .close-button button {
     border: none;
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
-    background-color: #004c8e;
-    float: right;
-    margin-right: 10px;
+    background-color: transparent;
   }
   .menu-icon {
     /* border: 1px solid red; */
     width: 25px;
     max-width: 25px;
-  }
-  .home-icon {
-    /* font-size: 16px; */
   }
   .mobile-icon {
     font-size: 21px;
@@ -128,8 +131,39 @@
   .accessories-icon {
     font-size: 15px;
   }
-  .menu-column>ul>li {
+  .menu-column > ul > li {
     display: flex;
     /* border: 1px solid red; */
+    background-color: whitesmoke;
+  }
+  .menu-column > ul > li:hover {
+    background-color: lightgray;
+  }
+  .icon-text {
+    display: flex;
+    width: 95%;
+    /* border: 1px solid red; */
+  }
+  .arrow-icon {
+    float: right;
+  }
+  .logo img {
+    width: 80%;
+    margin-left: 10px;
+  }
+  .side-nav-mobile-header {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    padding: 20px;
+    justify-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .menu-column .logo {
+    width: 40%;
+  }
+  .menu-column .home-icon {
+    color: black;
   }
 }
