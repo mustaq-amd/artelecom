@@ -23,4 +23,14 @@ export class HeaderComponent implements OnInit {
     this.toggleMenu();
     this.router.navigate(['/mobiles']);
   }
+
+  goToWatches() {
+    this.toggleMenu();
+    this.router.navigate(['/watch']);
+  }
+
+  goToRegistrationPage() {
+    this.toggleMenu();
+    this.router.navigate(['/signup']);
+  }
 }

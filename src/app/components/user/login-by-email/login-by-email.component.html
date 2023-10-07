@@ -1,1 +1,55 @@
-<p>login-by-email works!</p>
+<div class="p-fluid login-email-form">
+  <div>
+    <legend>Login</legend>
+  </div>
+  <form [formGroup]="loginEmailForm" (ngSubmit)="onSubmit()">
+    <div class="p-field">
+      <label for="email">Email</label>
+      <small
+        *ngIf="loginEmailForm.get('email').hasError('required')"
+        class="p-error"
+      >
+        *
+      </small>
+      <input id="email" type="text" pInputText formControlName="email" placeholder="eg : abc@gmail.com" />
+      <small
+        *ngIf="loginEmailForm.get('email').hasError('email')"
+        class="p-error"
+      >
+        Please enter a valid email address.
+      </small>
+    </div>
+
+    <div class="p-field">
+      <label for="password">Password</label>
+      <small
+        *ngIf="loginEmailForm.get('password').hasError('required')"
+        class="p-error"
+      >
+        *
+      </small>
+      <input
+        id="password"
+        type="password"
+        pPassword
+        formControlName="password"
+      />
+
+      <small
+        *ngIf="loginEmailForm.get('password').hasError('minlength')"
+        class="p-error"
+      >
+        Password must be at least 6 characters long.
+      </small>
+    </div>
+
+    <div class="p-field">
+      <button
+        pButton
+        type="submit"
+        label="Submit"
+        [disabled]="!loginEmailForm.valid"
+      ></button>
+    </div>
+  </form>
+</div>

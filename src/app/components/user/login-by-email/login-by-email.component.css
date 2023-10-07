@@ -1,0 +1,22 @@
+.login-email-form {
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: auto;
+  padding: 10%;
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  color: #004c8e;
+}
+
+.login-email-form div {
+  margin-bottom: 1rem;
+}
+
+legend {
+  /* border: 1px solid red; */
+  font-weight: bolder;
+  font-size: 24px;
+  text-align: center;
+  color: #004c8e;
+}

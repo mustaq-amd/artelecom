@@ -43,7 +43,7 @@
           <i class="fa fa-chevron-right arrow-icon"></i>
         </li>
         <li>
-          <div class="icon-text">
+          <div class="icon-text" (click)="goToWatches()">
             <i class="fa fa-clock-o menu-icon watch-icon"></i>Watches
           </div>
           <i class="fa fa-chevron-right arrow-icon"></i>
@@ -67,6 +67,12 @@
           <i class="fa fa-chevron-right arrow-icon"></i>
         </li>
         <li>
+          <div class="icon-text" (click)="goToRegistrationPage()">
+            <i class="fa fa-sign-in menu-icon" routerLink="signup"></i>SignUp
+          </div>
+          <i class="fa fa-chevron-right arrow-icon"></i>
+        </li>
+        <li>
           <div class="icon-text">
             <i class="fa fa-info-circle menu-icon"></i>Kya rakna bol
           </div>
@@ -76,16 +82,16 @@
     </div>
     <div class="auth">
       <div>
-        <i class="fa fa-search"></i>
+        <i class="fa fa-search" routerLink="search"></i>
       </div>
       <div>
-        <i class="fa fa-heart"></i>
+        <i class="fa fa-heart" routerLink="wishlist"></i>
       </div>
       <div>
         <i class="fa fa-shopping-cart" routerLink="cart"></i>
       </div>
       <div>
-        <i class="fa fa-user"></i>
+        <i class="fa fa-user" routerLink="loginE"></i>
       </div>
     </div>
   </div>

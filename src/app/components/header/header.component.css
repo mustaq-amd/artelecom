@@ -103,7 +103,7 @@
 
   /* Style the menu items as needed */
   .menu-column ul {
-    width: 90%;
+    width: 80%;
     margin: 2rem auto;
     list-style-type: none;
     padding: 0;
@@ -114,6 +114,7 @@
     padding: 10px;
     color: black;
     border-bottom: 1px solid lightslategray;
+    border-bottom-style: dotted;
     font-weight: 100;
   }
   .close-button button {
@@ -122,6 +123,7 @@
   }
   .cross-icon {
     color: white;
+    font-size: x-large;
   }
   .menu-icon {
     /* border: 1px solid red; */
@@ -152,8 +154,7 @@
     float: right;
   }
   .logo img {
-    width: 80%;
-    margin-left: 10px;
+    width: 90%;
   }
   .side-nav-mobile-header {
     display: flex;
@@ -169,5 +170,9 @@
   }
   .menu-column .home-icon {
     color: white;
+  }
+
+  .home-icon {
+    font-size: large;
   }
 }
