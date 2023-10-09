@@ -8,6 +8,7 @@ import { WatchComponent } from './components/watch/watch.component';
 import { SearchComponent } from './components/search/search.component';
 import { CartComponent } from './components/cart/cart.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { UserComponent } from './components/user/user.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'cart', component: CartComponent },
   { path: 'wishlist', component: WishlistComponent },
   { path: 'watch', component: WatchComponent },
+  { path: 'user-info', component: UserComponent },
 ];
 
 @NgModule({

@@ -90,8 +90,11 @@
       <div>
         <i class="fa fa-shopping-cart" routerLink="cart"></i>
       </div>
-      <div>
+      <div *ngIf="!isLoggedIn">
         <i class="fa fa-user" routerLink="loginE"></i>
+      </div>
+      <div *ngIf="isLoggedIn">
+        <i class="fa fa-user" routerLink="user-info"></i>
       </div>
     </div>
   </div>

@@ -15,6 +15,9 @@ import { CalendarModule } from 'primeng/calendar';
 import { ButtonModule } from 'primeng/button';
 import { PasswordModule } from 'primeng/password';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CardModule } from 'primeng/card';
+import { AvatarModule } from 'primeng/avatar';
+import { AvatarGroupModule } from 'primeng/avatargroup';
 
 import { UserComponent } from './components/user/user.component';
 import { LoginByEmailComponent } from './components/user/login-by-email/login-by-email.component';
@@ -25,6 +28,7 @@ import { SearchComponent } from './components/search/search.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { CartComponent } from './components/cart/cart.component';
 import { HomeComponent } from './components/home/home.component';
+import { LogoutComponent } from './components/user/logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +43,7 @@ import { HomeComponent } from './components/home/home.component';
     WishlistComponent,
     CartComponent,
     HomeComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +58,9 @@ import { HomeComponent } from './components/home/home.component';
     ButtonModule,
     PasswordModule,
     BrowserAnimationsModule,
+    CardModule,
+    AvatarModule,
+    AvatarGroupModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,15 @@
+.logout-section {
+  /* border: 1px solid green; */
+  padding: 10%;
+  text-align: center;
+}
+
+.logout-section button {
+  border: 1px solid grey;
+  background-color: transparent;
+  width: 80%;
+  padding: 5%;
+  border-radius: 5px;
+  margin: auto;
+  font-weight: 600;
+}

@@ -10,9 +10,11 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
   screenWidth: number;
   menuOpen = false;
+  isLoggedIn: boolean = false;
   constructor(private screenService: ScreenService, private router: Router) {}
   ngOnInit() {
     this.screenWidth = this.screenService.getScreenWidth();
+    this.isLoggedIn = true;
   }
 
   toggleMenu(): void {
