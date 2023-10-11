@@ -18,6 +18,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardModule } from 'primeng/card';
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
+import { CarouselModule } from 'primeng/carousel';
+import { GalleriaModule } from 'primeng/galleria';
+
+import { NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { UserComponent } from './components/user/user.component';
 import { LoginByEmailComponent } from './components/user/login-by-email/login-by-email.component';
@@ -29,6 +33,7 @@ import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { CartComponent } from './components/cart/cart.component';
 import { HomeComponent } from './components/home/home.component';
 import { LogoutComponent } from './components/user/logout/logout.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -60,7 +65,11 @@ import { LogoutComponent } from './components/user/logout/logout.component';
     BrowserAnimationsModule,
     CardModule,
     AvatarModule,
-    AvatarGroupModule
+    AvatarGroupModule,
+    CarouselModule,
+    NgbModule,
+    NgbProgressbarModule,
+    GalleriaModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

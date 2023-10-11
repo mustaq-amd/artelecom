@@ -1,0 +1,37 @@
+.new-arrival-header {
+  background: linear-gradient(45deg, #ff6b6b, #6b83ff);
+  background-size: 200% 200%;
+  animation: gradientAnimation 4s infinite;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+}
+.new-arrival-header p {
+  margin: 1rem;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scroll-left 10s linear infinite;
+  color: #004c8e;
+  font-weight: 600;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
