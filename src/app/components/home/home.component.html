@@ -1,32 +1,29 @@
-<app-header></app-header>
-<div class="scrolling-text blinking-text">Welcome to AR Telecom</div>
-
-<div class="card md:flex md:justify-content-center new-arrival-slider">
-  <div class="new-arrival-header">
-    <p>Newest Arrivals</p>
-  </div>
-  <p-galleria
-    [value]="images"
-    [showItemNavigators]="false"
-    [showThumbnails]="false"
-    [showIndicators]="false"
-    [showIndicatorsOnItem]="true"
-    [responsiveOptions]="responsiveOptions"
-    [containerStyle]="{ 'max-width': '650px' }"
-    [autoPlay]="true"
-    [circular]="true"
-    [transitionInterval]="3000"
-  >
-    <ng-template pTemplate="item" let-item>
-      <img
-        [src]="item.itemImageSrc"
-        style="width: 100%; height: 30%; display: block"
-      />
-    </ng-template>
-    <!-- <ng-template pTemplate="thumbnail" let-item>
-        <div class="grid grid-nogutter justify-content-center">
-          <img [src]="item.thumbnailImageSrc" style="display: block" />
-        </div>
-      </ng-template> -->
-  </p-galleria>
+<marquee class="scrolling-text">Welcome to AR Telecom</marquee>
+<div class="new-arrival-header">
+  <p>Newest Arrivals</p>
 </div>
+<ngb-carousel
+  #carousel
+  [interval]="3000"
+  [pauseOnHover]="true"
+  [pauseOnFocus]="true"
+  (slide)="onSlide($event)"
+  [showNavigationArrows]="false"
+  [showNavigationIndicators]="false"
+  class="corousal-slider"
+>
+  <ng-template ngbSlide *ngFor="let img of images; index as i">
+    <div class="carousel-caption">
+      <h3></h3>
+    </div>
+    <a
+      href="https://www.google.fr/?q=Number+{{ i + 1 }}"
+      target="_blank"
+      rel="nofollow noopener noreferrer"
+    >
+      <div class="picsum-img-wrapper">
+        <img [src]="img.itemImageSrc" alt="My image {{ i + 1 }} description" />
+      </div>
+    </a>
+  </ng-template>
+</ngb-carousel>

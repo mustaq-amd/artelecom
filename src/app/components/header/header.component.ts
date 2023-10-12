@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
   constructor(private screenService: ScreenService, private router: Router) {}
   ngOnInit() {
     this.screenWidth = this.screenService.getScreenWidth();
+    console.log('screenWidth : ', this.screenWidth);
     this.isLoggedIn = true;
   }
 
